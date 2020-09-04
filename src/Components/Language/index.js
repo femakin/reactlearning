@@ -1,6 +1,6 @@
 import React from "react";
 
- function Language({ name, image, id }) {
+ function Language({ name, image }) {
     return (
       <React.Fragment>
         <div className='language-item'>

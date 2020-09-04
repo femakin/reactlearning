@@ -42,27 +42,27 @@ const languageList = [
 ];
 
 function App() {
-  const getLanguageItem = languageList.map((item) => 
-  <Language 
-  key={item.id}
-  name={item.name}
-  image={item.image}
-/>
-  )
+//   const getLanguageItem = languageList.map((item) => 
+//   <Language 
+//   key={item.id}
+//   name={item.name}
+//   image={item.image}
+// />
+// )
   return (
     <div>
       <h1>List of Languages</h1>
       <div className="language">
-        { getLanguageItem }
-
-        {/* {languageList.map((item) => {
-          return (
-            <div className="language-item" key={item.id}>
-              <div className="language-name">{item.name} </div>
-              <img className="language-image" src={item.image} alt={item.name} />
-            </div>
-          );
-        })} */}
+        {/* { getLanguageItem } */}
+        {
+        languageList.map((item) => 
+            <Language 
+  key={item.id}
+  name={item.name}
+  image={item.image}
+/>
+        )
+        }
       </div>
     </div>
   );
