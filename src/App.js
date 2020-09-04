@@ -58,6 +58,10 @@ function App() {
               
             )
           })}
+           <Language 
+                name="Ruby"
+                image="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/python.svg"
+              />
           <Test />
 
         {/* {languageList.map((item) => {
