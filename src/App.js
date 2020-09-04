@@ -50,7 +50,7 @@ function App() {
             return (
               // Call the Language component and pass props to it
               <Language 
-                key={languageItem.id}
+                id={languageItem.id}
                 name={languageItem.name}
                 image={languageItem.image}
               />
