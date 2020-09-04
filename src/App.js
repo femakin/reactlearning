@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import Language from "./components/Language";
+import Language from "./Components/Language";
 
 const languageList = [
   {
