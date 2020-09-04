@@ -1,6 +1,6 @@
 import React from 'react';
-import './stylesheet.css' 
-import Language from './Language';
+import './index.css' 
+import Language from './Components/Language';
 
 
 function App() {
