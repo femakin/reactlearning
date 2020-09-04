@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-// import Language from "./Components/Language";
+import Language from "./Components/Language";
 
 const languageList = [
   {
@@ -46,7 +46,7 @@ function App() {
     <div>
       <h1>List of Languages</h1>
       <div className="language">
-        {/* {languageList.map((languageItem) => {
+        {languageList.map((languageItem) => {
             return (
               // Call the Language component and pass props to it
               <Language 
@@ -56,16 +56,16 @@ function App() {
               />
               
             )
-          })} */}
+          })}
 
-        {languageList.map((item) => {
+        {/* {languageList.map((item) => {
           return (
             <div className="language-item" key={item.id}>
               <div className="language-name">{item.name} </div>
               <img className="language-image" src={item.image} alt={item.name} />
             </div>
           );
-        })}
+        })} */}
       </div>
     </div>
   );
