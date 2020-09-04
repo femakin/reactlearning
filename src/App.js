@@ -43,27 +43,18 @@ const languageList = [
 ];
 
 function App() {
+  const getLanguageItem = languageList.map((item) => 
+  <Language 
+  key={item.id}
+  name={item.name}
+  image={item.image}
+/>
+  )
   return (
     <div>
       <h1>List of Languages</h1>
       <div className="language">
-        {languageList.map((languageItem) => {
-          console.log(languageItem)
-            return (
-              // Call the Language component and pass props to it
-              <Language 
-                key={languageItem.id}
-                name={languageItem.name}
-                image={languageItem.image}
-              />
-              
-            )
-          })}
-           <Language 
-                name="Ruby"
-                image="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/python.svg"
-              />
-          <Test />
+        { getLanguageItem }
 
         {/* {languageList.map((item) => {
           return (
