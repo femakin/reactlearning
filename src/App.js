@@ -49,15 +49,15 @@ function App() {
       <div className="language">
         {languageList.map((languageItem) => {
           console.log(languageItem)
-            // return (
-            //   // Call the Language component and pass props to it
-            //   <Language 
-            //     id={index}
-            //     name={languageItem.name}
-            //     image={languageItem.image}
-            //   />
+            return (
+              // Call the Language component and pass props to it
+              <Language 
+                key={languageItem.id}
+                name={languageItem.name}
+                image={languageItem.image}
+              />
               
-            // )
+            )
           })}
            <Language 
                 name="Ruby"
