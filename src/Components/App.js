@@ -3,9 +3,7 @@ import './stylesheet.css'
 import Language from './Language';
 
 
-class App extends React.Component {
-  render() {
-
+function App() {
 
     const languageList = [
       {
@@ -64,7 +62,6 @@ class App extends React.Component {
         </div>
       </div>
     );
-  }
 }
 
 export default App;

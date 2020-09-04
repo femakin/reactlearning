@@ -1,15 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 
- class Language extends Component {
-  render() {
+ function Language({ name, image }) {
     return (
         <div className='language-item'>
-        <div className='language-name'>{this.props.name} </div>
-        <img className='language-image' src={this.props.image} alt=""/>
+        <div className='language-name'>{name} </div>
+        <img className='language-image' src={image} alt=""/>
         {/* <img className='language-image' src='https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/html.svg' alt=""/> */}
       </div>
     )
-  }
 }
 
 export default Language
