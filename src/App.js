@@ -47,16 +47,17 @@ function App() {
     <div>
       <h1>List of Languages</h1>
       <div className="language">
-        {languageList.map((languageItem, index) => {
-            return (
-              // Call the Language component and pass props to it
-              <Language 
-                id={index}
-                name={languageItem.name}
-                image={languageItem.image}
-              />
+        {languageList.map((languageItem) => {
+          console.log(languageItem)
+            // return (
+            //   // Call the Language component and pass props to it
+            //   <Language 
+            //     id={index}
+            //     name={languageItem.name}
+            //     image={languageItem.image}
+            //   />
               
-            )
+            // )
           })}
            <Language 
                 name="Ruby"
